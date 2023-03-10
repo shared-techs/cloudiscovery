@@ -88,7 +88,7 @@ Vagrant.configure("2") do |config|
     unzip awscliv2.zip >/dev/null 2>&1
     sudo ./aws/install >/dev/null 2>&1
     echo 'Installing cloudiscovery...'
-    pip install -U Cloudiscovery  >/dev/null 2>&1
+    pip install -U cloudiscovery  >/dev/null 2>&1
     pip install -U markupsafe==2.0.1 >/dev/null 2>&1
   SHELL
 end
