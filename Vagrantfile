@@ -70,7 +70,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", privileged: false, inline: <<-SHELL
     echo 'Installing required packages...'
     sudo dnf upgrade -y > /dev/null
-    sudo dnf install gcc openssl-devel bzip2-devel libffi-devel make zlib-devel ncurses-devel sqlite-devel readline-devel -y > /dev/null
+    sudo dnf install gcc openssl-devel bzip2-devel libffi-devel make zlib-devel ncurses-devel sqlite-devel readline-devel xz-devel -y > /dev/null
     echo 'Installing pyenv...'
     curl -s https://pyenv.run | bash > /dev/null 2>&1
     echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.bashrc
